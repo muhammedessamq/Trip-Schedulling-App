@@ -1,0 +1,56 @@
+<section class="vh-100 bg-image"
+  style="background-image: url('https://wallpaperaccess.com/full/5508680.jpg');">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">Create trip</h2>
+
+              <section>
+
+                
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4cg">From Station</label>
+                  <input type="fromStation" id="form3Example4cg" class="form-control form-control-lg" 
+                  [(ngModel)] = "trip.fromStation" name="fromStation"/>
+                 
+                </div>
+
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example4cg">To Station</label>
+                    <input type="ToStation" id="form3Example4cg" class="form-control form-control-lg"
+                    [(ngModel)] = "trip.toStation" name="ToStation" />
+                   
+                  </div>
+  
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example4cg">Start Time</label>
+                    <input type="Start Data" id="form3Example4cg" class="form-control form-control-lg" 
+                    [(ngModel)] = "trip.startTime" name="startTime"/>
+                   
+                  </div>
+                
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example4cg">End Time</label>
+                    <input type="End Data" id="form3Example4cg" class="form-control form-control-lg" 
+                    [(ngModel)] = "trip.endTime" name="endTime"/>
+                   
+                  </div>
+
+                <div class="d-flex justify-content-center">
+                  <button type="submit" (click)="onSubmit()"
+                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" routerLink="/trip" routerLinkActive="active">Create</button>
+                </div>
+
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

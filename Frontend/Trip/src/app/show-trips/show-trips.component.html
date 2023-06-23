@@ -1,0 +1,53 @@
+<section class="vh-100 bg-image"
+  style="background-image: url('https://wallpaperaccess.com/full/5508680.jpg');">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">show all trips</h2>
+
+              <form>
+                <h2>Trips List</h2>
+                <table class = "table table-striped">
+                 <thead> 
+                 <tr>
+                    <th>ID</th>
+                    <th>From Station</th>
+                    <th>To Station</th>
+                    <th>Start Time</th> 
+                    <th>End Time</th>  
+                 </tr>
+                 </thead>
+                 <tbody>
+                    <tr *ngFor="let trip of trips">
+
+                        <td>{{trip.tripId}}</td>
+                        <td>{{trip.fromStation}}</td>
+                        <td>{{trip.toStation}}</td>
+                        <td>{{trip.startTime}}</td>
+                        <td>{{trip.endTime}}</td>
+                       
+                    </tr>
+                 </tbody>
+                </table>
+                    
+
+                
+
+               
+                  <button type="button"
+                    class=" btn btn-success  " routerLink="/trip" routerLinkActive="active">Home Page</button>
+             
+
+            
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
